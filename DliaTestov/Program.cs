@@ -10,8 +10,11 @@ namespace DliaTestov
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine(Environment.GetEnvironmentVariable("TGKEYShopBot"));
 
-			userRepository.Update = new UserRepository();
+
+
+			
 			//string ConnectionString = "Server=localhost;port=5432;User Id = postgres;Password=123;Database=qqq;";
 			//using (var connection = new NpgsqlConnection(ConnectionString))
 			//{
