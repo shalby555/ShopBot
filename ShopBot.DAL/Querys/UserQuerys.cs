@@ -17,5 +17,7 @@ namespace ShopBot.DAL.Querys
 		public const string GetUserByIdQuary = $"SELECT \"Id\" \"Name\" FROM public. \"User\" where \"Id\"= @id";
 
 		public const string DeleteUserByIdQuery =  $"delete  FROM \"User\" where \"Id\"= @id";
+
+		public const string GetAllUsersWithOrdersQuery = $" SELECT FROM  \"User\" left join \"Order\" on \"User\".\"ShopId\" = \"Order\".\"ShopId\";";
 	}
 }
