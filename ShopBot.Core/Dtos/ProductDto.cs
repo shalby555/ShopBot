@@ -12,9 +12,11 @@ namespace ShopBot.Core.Dtos
 
 		public string? Name { get; set; }
 
+		public string? Count { get; set; }
+
 		public bool? IsActive { get; set; }
 
-		public bool? IsDelited { get; set; }
+		// public bool? IsDelited { get; set; }  вроде как не нужно
 
 	}
 }

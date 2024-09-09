@@ -18,7 +18,7 @@ namespace ShopBot.Core.Dtos
 
 		public int? ShopId { get; set; }
 
-		public int? OrderCount { get; set; }
+		//public int? OrderCount { get; set; }
 
 		public int? PickUpPointId { get; set; }
 
