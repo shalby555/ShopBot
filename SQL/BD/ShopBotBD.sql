@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS "Product" (
 
 CREATE TABLE IF NOT EXISTS "Order" (
 	"Id" serial PRIMARY KEY,
-	"Date" DATE,
+	"Date" character varying(30),
 	"AdminId" integer,
 	"StatusId" integer,
 	"ShopId" integer
