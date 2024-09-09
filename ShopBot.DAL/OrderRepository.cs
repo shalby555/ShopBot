@@ -15,7 +15,7 @@ namespace ShopBot.DAL
 			using (var connection = new NpgsqlConnection(connectionString))
 			{
 
-				string query = UserQuerys.AddUserQuery;
+				string query = OrderQuerys.AddOrderQuery;
 				var args = new { date = order.Date };
 
 				connection.Open();
