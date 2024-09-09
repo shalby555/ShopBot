@@ -84,3 +84,9 @@ left join "Product" as P on P."Id" = OP."ProductId"
 update "Order" set  
 "StatusId" = 3 
 where "Id"= 3
+
+select  O."Id",O."Date",
+P."Id",P."Name",OP."Count"
+from "Order" as O
+left join "Order_Product" as OP on O."Id" = "OrderId"
+left join "Product" as P on P."Id" = OP."ProductId"
