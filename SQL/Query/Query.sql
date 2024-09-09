@@ -58,3 +58,35 @@ from "Order"
 select *
 from "Shop"
 join "User" on "Shop"."Id" = "User"."ShopId"
+
+select *
+from "User"
+left join "Order" on "User"."ShopId" = "Order"."ShopId"
+
+
+select *
+from "Order" as O
+left join "Order_Product" as OP on O."Id" = "OrderId"
+left join "Product" as P on P."Id" = OP."ProductId"
+
+
+
+select U."Id",U."Name",
+O."Id",O."Date"
+from "User" as U
+left join "Order" as O on O."ShopId" = U."ShopId"
+
+select O."Id".
+from "Order" as O
+left join "Order_Product" as OP on O."Id" = "OrderId"
+left join "Product" as P on P."Id" = OP."ProductId"
+
+update "Order" set  
+"StatusId" = 3 
+where "Id"= 3
+
+select  O."Id",O."Date",
+P."Id",P."Name",OP."Count"
+from "Order" as O
+left join "Order_Product" as OP on O."Id" = "OrderId"
+left join "Product" as P on P."Id" = OP."ProductId"
