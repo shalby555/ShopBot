@@ -58,3 +58,7 @@ from "Order"
 select *
 from "Shop"
 join "User" on "Shop"."Id" = "User"."ShopId"
+
+select *
+from "User"
+left join "Order" on "User"."ShopId" = "Order"."ShopId"
