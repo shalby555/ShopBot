@@ -19,9 +19,9 @@ namespace ShopBot.Core.Dtos
 
 		public int? ShopId { get; set; }
 
-		public List<ProductDto>? Products { get; set; }
+		public List<ProductDto>? Count  { get; set; }
 
-		public List<OrderProductDto>? Count { get; set; }
+		public List<OrderDto>? Products { get; set; }
 
 	}
 }
