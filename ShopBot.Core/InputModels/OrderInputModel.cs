@@ -16,6 +16,8 @@ namespace ShopBot.Core.InputModels
 
 		//public int StatusId { get; set; } или как то автоматом пускай выставляет после отправки в Телегу
 
-		public List<OrderProductDto>? ProductAndCount { get; set; } //список продуктов и кол-ва
+		public List<OrderDto> ? ProductAndCount { get; set; } //список продуктов и кол-ва
 	}
+
+	
 }
