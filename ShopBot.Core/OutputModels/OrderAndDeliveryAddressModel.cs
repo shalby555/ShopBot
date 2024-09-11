@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ShopBot.Core.OutputModels
 {
-	public class OrderAndDeliveryAddress
+	public class OrderAndDeliveryAddressModel
 	{
 		public int OrderId { get; set; }
 		public int StatusId { get; set; }
