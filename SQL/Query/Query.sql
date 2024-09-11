@@ -90,3 +90,10 @@ P."Id",P."Name",OP."Count"
 from "Order" as O
 left join "Order_Product" as OP on O."Id" = "OrderId"
 left join "Product" as P on P."Id" = OP."ProductId"
+
+select U."Id",U."Name",
+O."Id",O."Date",
+S."Id", S."OrderStatus"
+from "User" as U
+left join "Order" as O on O."ShopId" = U."ShopId"
+left join "Status" as S on S."Id" = O."StatusId"
