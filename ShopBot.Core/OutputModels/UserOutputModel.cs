@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ShopBot.Core.OutputModels
 {
-	public class UserOutputModelcs
+	public class UserOutputModel
 	{
 		public string Name { get; set; }
 

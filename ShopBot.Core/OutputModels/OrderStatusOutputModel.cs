@@ -12,6 +12,6 @@ namespace ShopBot.Core.OutputModels
 
 		public int StatusId	{ get; set; }
 
-		public
+		
 	}
 }
