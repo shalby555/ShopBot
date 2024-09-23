@@ -10,7 +10,13 @@ namespace DliaTestov
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine(Environment.GetEnvironmentVariable("TGKEYShopBot"));
+
+
+			UserRepository userRepository = new UserRepository();
+			userRepository.AddUser("Boriska");
+
+
+			//Console.WriteLine(Environment.GetEnvironmentVariable("TGReyShopBot"));
 
 
 

@@ -16,6 +16,7 @@ namespace ShopBot.DAL.Querys
 			  
 			                                $" O.\"Id\" = \"OrderId\"left join \"Product\" as P on P.\"Id\" = OP.\"ProductId\";";
 
+
 		public const string UpdateOrderStatusQuary = $"update \"Order\"set \"StatusId\" = @statusid where \"Id\"= @id"; 
 	}
 }

@@ -11,32 +11,25 @@ namespace ShopBot.DAL
 	{
 		public void AddUser(UserDto user)
 		{
-
-			string connectionString = Options.ConnectionString;
+            string connectionString = Options.ConnectionString;
 			using (var connection = new NpgsqlConnection(connectionString))
 			{
-
-				string query = UserQuerys.AddUserQuery;
+                string query = UserQuerys.AddUserQuery;
 				var args = new { name = user.Name, phone = user.Phone, roleid = user.RoleId, shopid = user.ShopId };
 
-				connection.Open();
+                connection.Open();
 				connection.Query(query, args);
-
-
-
-			}
+             }
 
 		}
 		
 		public void UpdateUser(UserDto user)
 		{
-
-				string connectionString = Options.ConnectionString;
+                string connectionString = Options.ConnectionString;
 				using (var connection = new NpgsqlConnection(connectionString))
 				{
-
-					string query = UserQuerys.UpdateUserQuary;
-					var args = new { name = user.Name, id = user.Id };
+                    string query = UserQuerys.UpdateUserQuary;
+					var args = new { roleid = user.RoleId, id = user.Id };
 
 					connection.Open();
 					connection.Query(query, args);
