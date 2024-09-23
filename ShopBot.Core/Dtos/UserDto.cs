@@ -14,11 +14,11 @@ namespace ShopBot.Core.Dtos
 
 		public int? Phone { get; set; }
 
-		public int? RoleId { get; set; }	
+		public int? RoleId { get; set; }
 
 		public int? ShopId { get; set; }
 
-		//public int? OrderCount { get; set; }
+		public int? OrderCount { get; set; }
 
 		public int? PickUpPointId { get; set; }
 
